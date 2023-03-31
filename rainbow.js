@@ -1,5 +1,16 @@
 'use strict';
 
+//starting out with the function of myFunction and document.write() function
+      function myFunction()
+      {
+      	document.write("This is a simple function.<br />");
+      }
+		myFunction();
+
+
+
+
+//reverse engineer this code
 $('.filter-btn').on('click', function() {
   // reset all background color to blue
   $('.filter-btn').css('background-color', '#007bff')
