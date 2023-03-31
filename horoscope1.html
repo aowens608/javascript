@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>gary</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <!--body has an image of the galaxy stars-->
+  <body class="brightStars">
+    <!--this div contains all of the imaformation of the page -->
+    <div class="container-fluid">
+      
+    <div class="">
+        <nav class="navbar navbar-expand-sm ">
+             <!--zodiac logo-->
+          <div class="mt-2  navMargin d-flex">
+            <a href="#"><img class="navImage"  src="css/images/dating.jpg"></a>
+            <a href="#"><h2 class="text-primary">Zodiac Date</h2></a>
+          </div>
+      
+          
+          <!--sign up modal-->
+          <a class="moveRight" href="#"><p  id="navLeft" class="mt-4" title="click to see sign up">Zodiac Date</p></a>
+         <!--sign in modal-->
+         <!--<a class="" href="#" data-toggle="modal" data-target="#myModal2"><p title="click to sign in" id="navRight" class="mt-4 text-warning" >Sign In</p></a>-->
+          <!--<a class="" href="#" data-toggle="modal" data-target="#myModal2"><p title="click to sign in" id="navRight" class="mt-4 text-warning" >Log In</p></a>-->
+         
+         <!-- three drop downs box for profile picture-->
+       
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+         <!-- The Modal -->
+  <div class="modal fade" id="myModal2">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content smaller">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h1 class="modal-title text-primary">Log In</h1>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        <form action="#" class="needs-validation" novalidate>
+  <div class="form-group">
+    <!--fill out for the Username-->
+    <label for="uname">Username:</label>
+    <input type="text" class="form-control" id="uname" placeholder="Enter username" onfocus="this.style.backgroundColor = 'lightgrey';" onblur="this.style.backgroundColor = 'white';"   maxlength="30" minlength="5" size="15" name="uname" required title="Please enter your Username">
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">User must be 5 characters or more</div>
+   
+  </div>
+   <!--fill out for the password-->
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd" onfocus="this.style.backgroundColor = 'lightgrey';" onblur="this.style.backgroundColor = 'white';"  placeholder="Enter password" name="pwd" minlength="8"  maxlength="30" size="15" required title="Please enter your password">
+    <input type="checkbox" id="showPwd">
+    <label class="mt-1" for="showPwd">Show password</label>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">User must be 8 characters or more</div>
+  </div>
+
+  
+  <!--</div>-->
+  <button id="change_profile-Image" class="btn btn-primary col-12" required title="Submit when finished">Log in</button>
+  <p class="mt-1 mx-auto">No Account?<a href="#" data-toggle="modal" data-target="#myModal3"> Sign up here</a> </p>
+   <!--<button id="change_profile-Image" class="btn btn-success col-3 offset-5" data-toggle="modal" data-target="#myModal3" required title="Submit when finished">Sign up</button>-->
+ 
+  <!-- <button id="change_profile-Image" data-toggle="modal" data-target="#myModal3" class="btn btn-success col-3  offset-5" required title="Submit when finished">Sign up</button>-->
+      </form>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!--==============================second Modal for sign===================
+  
+                                      SECOND MODAL
+  
+  =========================================================================-->
+  
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal3">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h1 class="modal-title">Sign Up</h1>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+              <div class="d-flex">
+           <img class="navImage" src="css/images/dating.jpg">
+            <h2 class="text-primary">Zodiac Date</h2>
+              </div>
+              <h3 class="text-success">Become a Member!</h3>
+          <p>Wecome to the #1 dating site to meet real singles. Zodiac Date is design to find your perfect match. Sign in today to explore the stars!</p>
+       <form action="#" class="needs-validation" novalidate>
+          <!--form for name-->
+    <div class="form-group ">
+    <label for="name" class="required" required title="Please enter your name">Name:</label>
+     <input type="text" class="form-control" id="uname" placeholder="Enter your name" onfocus="this.style.backgroundColor = 'lightgrey';" onblur="this.style.backgroundColor = 'white';"   maxlength="30" size="15" name="name" required title="Please enter your name">
+     <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+         <!--form for email-->
+    <div class="form-group ">
+    <label for="email">Email:</label>
+     <input type="email" class="form-control" id="uname" placeholder="you@example.com" onfocus="this.style.backgroundColor = 'lightgrey';" onblur="this.style.backgroundColor = 'white';"   maxlength="30" size="15" name="email" required title="Please enter your email">
+     <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">please enter a valid email.</div>
+    </div>
+    <!--form for age-->
+     <div class="form-group">
+    <label for="birthday" class="required" required title="Please enter your birthday">Birthday:</label>
+     <input type="date" class="form-control" id="birthday" placeholder="yyy-mm-dd"   maxlength="30" size="15" name="birthday" required title="Please enter your birthday">
+     <label for="legal">You must be 18 years of age to join</label>
+     <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <!--select a gender-->
+     <div class="form-group">
+      <label for="sel1">Select gender (select one):</label>
+      <select class="form-control" id="sel1" name="sellist1" required title="Please select gender">
+        <option>Male</option>
+        <option>Female</option>
+        <option>Transgender</option>
+        <option>Non-binary</option>
+      </select>
+    </div>
+    <!--form for State-->
+     <div class="form-group">
+   <label for="sel1">Select State (select one):</label>
+      <select class="form-control required" id="sel1" name="sellist1" required title="Please enter State">
+        <option>California</option>
+        <option>Oregen</option>
+        <option>Indiana</option>
+        <option>Arizona</option>
+      </select>
+     <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+     <!--form for city-->
+     <div class="form-group">
+   <label for="sel1">Select City (select one):</label>
+      <select class="form-control required" id="sel1" name="sellist1" required title="Please enter city">
+        <option>Los Angeles</option>
+        <option>Long Beach</option>
+        <option>Bellflower</option>
+        <option>Bel Air</option>
+      </select>
+     <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    
+     <!--form for username-->
+     <div class="form-group">
+    <label for="uname"> Create Username:</label>
+    <input type="text" class="form-control" id="uname" placeholder="Enter username" onfocus="this.style.backgroundColor = 'lightgrey';" onblur="this.style.backgroundColor = 'white';"   maxlength="30" minlength="5" size="15" name="uname" required title="Please enter your Username">
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">User must be 5 characters or more</div>
+    </div>
+  <!--form for Password-->
+  <div class="form-group">
+    <label for="">Password:</label>
+    <input type="password" class="form-control" id="" placeholder="Enter password" onfocus="this.style.backgroundColor = 'lightgrey';" onblur="this.style.backgroundColor = 'white';" name="pswd"  maxlength="30" minlength="8" size="15" required title="Please enter your password">
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">User must be 8 characters or more</div>
+  </div>
+   <!--form for confirm password-->
+     <div class="form-group">
+    <label for="conf-password"> Confirm password:</label>
+    <input type="text" class="form-control" id="uname" placeholder="Enter password" onfocus="this.style.backgroundColor = 'lightgrey';" onblur="this.style.backgroundColor = 'white';"  maxlength="30" size="15" minlength="8" name="uname" required title="Please confirm password">
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">please confirm password</div>
+    </div>
+     <!--form for  bio-->
+    <div class="form-group">
+      <label for="bioMe">Short Bio(max 140 characters):</label>
+      <textarea  placeholder="Type a short" class="form-control" rows="5" id="bioMe" onfocus="this.style.backgroundColor = 'lightgrey';" onblur="this.style.backgroundColor = 'white';" name="bioMe" maxlength="140" cols="20" required title="Please fill out short bio"></textarea>
+      <span id="bio-count">140 characters left </span>
+      <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+     <!--form for confirm password-->
+     <div class="form-group">
+    <label for="conf-password"> Upload your Photo:</label>
+    <input type="file" class="form-control" title="Please confirm password">
+     <input type="submit" class="form-control"   name="pictures" title="Please confirm Upload photo">
+    </div>
+    
+     <!--form for checkbox for Terms and Conditions -->
+ <div class="form-group form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox" name="remember" required title="Please check box"><a href="#" title="click for terms and conditions"> I agree on Terms and Conditions.</a>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback" >You must agree to the terms.</div>
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary" required title="Submit when finished">Submit</button>
+</form>
+
+        
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+
+        </nav>
+        </div>
+     
+       <!--============================text below nav bar=========================================-->
+      <div class="row justify-content-center betweenWord">
+        <div>
+          <p class="text-uppercase largerText text-danger mt-3 "><b>What's your Sign?</b></p>
+          <p class="text-center smallText ">Every sign holds a special energy - look up yours below!</p>
+        </div>
+      </div>
+       <!--new row for horoscopes button=============================================-->
+      <div class="row">
+        <div class="d-flex mx-auto">
+          
+          <a class="horoscope-anchor" href="#"  data-toggle="tooltip" title="Aries">
+            <div id="aries" class="hideMe img2  mx-2 mb-3 my-3 section "></div><div class=" hideit text-center text-white"><b class="horoscope-title img3 hideMe ">Aries</b></div>
+          </a>
+          <a class="horoscope-anchor" href="#"  data-toggle="tooltip" title="Taurus">
+            <div id="taurus" class="hideMe img2 mx-2  mb-3 my-3 section "></div><div class=" hideit text-center text-white"><b class="horoscope-title img3 hideMe ">Taurus</b></div>
+          </a>
+          <a class="horoscope-anchor" href="#"  data-toggle="tooltip" title="Gemini">
+            <div id="gemini" class="hideMe img2 mx-2 mb-3 my-3 section "></div><div class=" hideit text-center text-white"><b class="horoscope-title img3 hideMe ">Gemini</b></div>
+          </a>
+          <a class="horoscope-anchor" href="#"  data-toggle="tooltip" title="Cancer">
+            <div id="cancer" class="hideMe img2 mx-2 mb-3 my-3 section "></div><div class=" hideit text-center text-white"><b class="horoscope-title img3 hideMe ">Cancer</b></div>
+          </a>
+        </div>
+      </div>
+         
+      <!--new row for horoscopes button=============================================-->
+      <div class="row">
+        <div class="d-flex mx-auto">
+          <a class="horoscope-anchor" href="#"  data-toggle="tooltip" title="Leo">
+            <div id="leo" class="hideMe img2 mx-2 mb-3 my-3 section "></div><div class=" hideit text-center text-white"><b class="horoscope-title img3 hideMe">Leo</b></div>
+          </a>
+          <a class="horoscope-anchor" href="#"  data-toggle="tooltip" title="Virgo">
+            <div id="virgo" class="hideMe img2 mx-2 mb-3 my-3 section "></div><div class=" hideit text-center text-white"><b class="horoscope-title img3 hideMe">Virgo</b></div>
+          </a>
+          <a class="horoscope-anchor" href="#"  data-toggle="tooltip" title="Libra">
+            <div id="libra" class="hideMe img2 mx-2 mb-3 my-3 section "></div><div class=" hideit text-center text-white"><b class="horoscope-title img3 hideMe">Libra</b></div>
+          </a>
+          <a class="horoscope-anchor" href="#"  data-toggle="tooltip" title="Scorpio">
+            <div id="scorpio" class="hideMe img2 mx-2 mb-3 my-3 section "></div><div class=" hideit text-center text-white"><b class="horoscope-title img3 hideMe">Scorpio</b></div>
+          </a>
+        </div>
+      </div>
+      <!--new row for horoscopes button =============================================-->
+      <div class="row">
+        <div class="d-flex mx-auto">
+          <a class="horoscope-anchor" href="#"  data-toggle="tooltip" title="Sagittarius">
+            <div id="sagittarius" class="hideMe img2 mx-2 mb-3 my-3 section "></div><div class=" hideit text-center text-white"><b class="horoscope-title img3 hideMe">Sagittarius</b></div>
+          </a>
+          <a class="horoscope-anchor" href="#"  data-toggle="tooltip" title="Capricorn">
+            <div id="capricorn" class="hideMe img2 mx-2 mb-3 my-3 section"></div><div class=" hideit text-center text-white"><b class="horoscope-title img3 hideMe">Capricorn</b></div>
+          </a>
+          <a class="horoscope-anchor" href="#"  data-toggle="tooltip" title="Aquarius">
+            <div id="aquarius" class="hideMe img2  mx-2 mb-3 my-3 section "></div><div class=" hideit text-center text-white"><b class="horoscope-title img3 hideMe">Aquarius</b></div>
+          </a>
+          <a class="horoscope-anchor" href="#"  data-toggle="tooltip" title="Pisces">
+            <div id="pisces" class="hideMe img2  mx-2 mb-3 my-3 section"></div><div class=" hideit text-center text-white"><b class="horoscope-title img3 hideMe">Pisces</b></div>
+          </a>
+        </div>
+      </div>
+      <!--========================================
+      slide in box for the horoscope sign
+                  Aries
+      =========================================-->
+      <div class='aries-wrap'>
+        <div id="scopeInfo" class="aries">
+          <h2 class="mt-5 text-black text-center">Aries</h2>
+          <p class=" text-danger text-center">March 21-April 21</p>
+          <p class=" text-danger text-center">Courageous, creative,spontaneous, a catalyst, forceful, an agitator, confrontation, a do-er, restless, lover of challenge , ardent, a fighter, dynamic, a keader. The Ram is brusque, aggressive and lacks subtlety.<b> Aries in Love</b> is a passionate fool.</p>
+          <button type="button" class="mt-5 btn btn-outline-danger w-50 button1 close">Close</button>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+     <script src="js/jquery.js"></script>
+     <script src="js/anime.js"></script>
+     <script src="js/bootstrap.js"></script>
+     <script src="js/popper.js"></script>
+     <script src="js/rainbow.js"></script>
+     
+    
+    </body>
+    </html>
+     
